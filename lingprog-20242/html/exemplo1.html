@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Exemplo 1</title>
+        <link rel="stylesheet" href="../css/estilo.css"/>
     </head>
     <body>
         <h1> Conheço meu cachorro </h1>
@@ -48,5 +49,46 @@
             </ul>
         </p>
         <!-- lição de casa: estude formulários em HTML -->
+         <p>
+            <form action="arquivo.php">
+                <div>
+                    <label for="nome"> Nome </label>
+                    <input type="text" id="nome"/>
+                </div>
+                <div>
+                    <label for="email"> Email </label>
+                    <input type="email" id="email"/>
+                </div>
+                <div>
+                    <label for="sexo"> Sexo </label>
+                    <input type="radio" id="feminino" name="sexo" value="Feminino"/>
+                    <label for="feminino"> Feminino </label>
+                    <input type="radio" id="masculino" name="sexo" value="Masculino"/>
+                    <label for="masculino"> Masculino </label>
+                    <input type="radio" id="prefiro" name="sexo" value="Prefiro não responder"/>
+                    <label for="prefiro"> Prefiro não responder </label>
+                </div>
+                <div>
+                    <label> Hobbies </label>
+                    <input type="checkbox" id="esporte"/>
+                    <label for="esporte"> Esporte </label>
+                    <input type="checkbox" id="videogame"/>
+                    <label for="videogame"> Videogame </label>
+                    <input type="checkbox" id="leitura"/>
+                    <label for="leitura"> Leitura </label>
+                </div>
+                <div>
+                    <label> Selecione uma opção </label>
+                    <select id="opcao">
+                        <option value="opcao1"> Opção 1 </option>
+                        <option value="opcao2"> Opção 2 </option>
+                        <option value="opcao3"> Opção 3 </option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar"/>
+                </div>
+            </form>
+         </p>
     </body>
 </html>
