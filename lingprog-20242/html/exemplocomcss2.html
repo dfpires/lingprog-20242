@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h1 {
+                color:red;
+            }
+            #cabecalho {
+                color: blue;
+            }
+            .destaque {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h2> Exemplo de cascata e especificidade </h2>
+        <div id="cabecalho">
+            dasdasdas
+            <h1 class="destaque"> Título </h1>
+        </div>
+        <!-- a mesma classe sendo aplicada para diferentes elementos-->
+        <h2 class="destaque"> texto h2 </h2>
+        <h3 class="destaque"> texto h3 </h3>
+        <h4 id="cabecalho"> texto h4 </h4> <!-- não faça isso -->
+    </body>
+</html>
