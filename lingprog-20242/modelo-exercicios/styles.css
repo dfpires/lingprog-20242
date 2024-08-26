@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,10 +7,12 @@ body {
     height: 100vh;
 }
 
+
 .container {
     display: flex;
     width: 100%;
 }
+
 
 .sidebar {
     width: 200px;
@@ -52,3 +55,4 @@ h2 {
 p {
     font-size: 1.1em;
 }
+

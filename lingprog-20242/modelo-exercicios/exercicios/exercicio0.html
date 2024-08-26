@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts/scripts.js"> </script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Voltar ao Início</a></li>
+                    <li><a href="exercicio1.html">Exercício 1</a></li>
+                    <li><a href="exercicio2.html">Exercício 2</a></li>
+                    <li><a href="exercicio3.html">Exercício 3</a></li>
+                    <li><a href="exercicio4.html">Exercício 4</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <h2>Exercício do IMC </h2>
+            <form>
+                <div>
+                    <label for="peso"> Informe o peso </label>
+                    <input type="number" id="peso"/>
+                </div>
+                <div>
+                    <label for="altura"> Informe a altura </label>
+                    <input type="number" id="altura"/>
+                </div>
+                <button type="button" onclick="calcularImc()"> Calcula IMC </button>
+                <div> <!-- aqui vai aparecer o resultado do imc -->
+                    <p id="imc"> </p>
+                </div> 
+            </form>
+        </main>
+    </div>
+</body>
+</html>
