@@ -17,11 +17,12 @@
                     <li><a href="exercicio2.html">Exercício 2</a></li>
                     <li><a href="exercicio3.html">Exercício 3</a></li>
                     <li><a href="exercicio4.html">Exercício 4</a></li>
+                    <li><a href="exercicio5.html">Exercício 5</a></li>
                 </ul>
             </nav>
         </aside>
         <main class="content">
-            <h2>Exercício 4</h2>
+            <h2>Exercício 5</h2>
             <form>
                 <div>
                     <label for="nro1"> Informe número 1</label>
@@ -32,11 +33,16 @@
                     <input type="number" id="nro2"> 
                 </div>
                 <div>
-                    <label for="nro3"> Informe número 3</label>
-                    <input type="number" id="nro3"> 
+                    <label for="opcao"> Informe número 3</label>
+                    <select id="opcao">
+                        <option value="1"> Média </option>
+                        <option value="2"> Diferença </option>
+                        <option value="3"> Produto </option>
+                        <option value="4"> Divisão </option>
+                    </select> 
                 </div>
-                <button type="button" onclick="ordenar()"> Calcular o maior </button>
-                <p id="ordena"> </p>
+                <button type="button" onclick="exe5()"> Calcular </button>
+                <p id="resultado"> </p>
             </form>
         </main>
     </div>
