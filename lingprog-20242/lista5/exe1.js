@@ -43,10 +43,20 @@ function principal(){
         {nome: "Maria", idade:20, nota: 9.0},
         {nome: "Carlos", idade:21, nota: 7.5},
     ]
-    cadastraAluno(alunos)
-    consultaAlunos(alunos)    
-    maiorNota(alunos)
-    mediaNotas(alunos)
+    let opcao
+    do {
+        console.log(`Digite \n1. Cadastra aluno \n2. Consulta alunos \n3. Maior nota \n4. Média notas \n5.Sair`)
+        opcao = Number(prompt()) 
+        switch(opcao){
+            case 1: cadastraAluno(alunos); break;
+            case 2: consultaAlunos(alunos); break;
+            case 3: maiorNota(alunos); break;
+            case 4: mediaNotas(alunos); break;
+            case 5: console.log(`Programa será encerrado`); break;
+            default: console.log(`Opção inválida`)
+        }
+    }
+    while (opcao != 5)
 }
 
 principal()
